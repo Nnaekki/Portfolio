@@ -7,7 +7,8 @@ import {
 } from "react-icons/ai";
 import Image from "next/image";
 import Sandie from "public/SandyAvatar.png";
-
+import code from "public/code.png";
+import writing from "public/writing.png";
 
 export default function Home() {
   return (
@@ -37,12 +38,15 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium">Sandra Enuma</h2>
-            <h3 className="text-2xl py-2">Web Developer</h3>
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Sandra Enuma
+            </h2>
+            <h3 className="text-2xl py-2">
+              Web Developer and Technical Writer
+            </h3>
             <p className="text-md py-5 leading-8 text-gray-800">
-              Frontend focused web developer providing services for any website and
-              web application frontend need. Join me down below and let's
-              connect!
+              Frontend focused web developer providing services for programming
+              and technical writing needs. Join me down below and let's connect!
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -50,8 +54,12 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillGithub />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden"> 
-<Image src={Sandie} style={{layout: "fill", objectFit: "cover"}} alt="Dev Image" />
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden">
+            <Image
+              src={Sandie}
+              style={{ layout: "fill", objectFit: "cover" }}
+              alt="Dev Image"
+            />
           </div>
         </section>
 
@@ -59,14 +67,74 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-          <p className="text-md py-2 leading-2 text-gray-800">
-          As a frontend developer, I hope to work for
-              <span className="text-teal-500"> agencies </span> and <span className="text-teal-500">startups </span> 
-              where I can contribute, learn and grow.
-              I also wish to collaborate with other talented people to create amazing digital products
-              for both business and consumer use.
-          </p>
+            <h3 className="text-center text-3xl py-1 mt-10">
+              Services I offer
+            </h3>
+            <p className="text-center text-md py-2 leading-2 text-gray-800">
+              As a frontend developer and technical writer, I hope to work for
+              <span className="text-teal-500"> agencies </span> and{" "}
+              <span className="text-teal-500">startups </span>
+              where I can contribute, learn and grow. I also wish to collaborate
+              with other talented people to create amazing digital products for
+              both business and consumer use.
+            </p>
+          </div>
+          <div className="relative text-center shadow-lg p-10 rounded-xl my-10">
+            <div>
+              <Image
+                src={code}
+                width={100}
+                height={100}
+                style={{ objectPosition: "center" }}
+                alt=" "
+              />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs Brought to Life
+              </h3>
+              <p className="py-2">
+                Building interactive and functional websites for your needs
+                using the three pillars of frontend development.
+              </p>
+              <h4 className="py-4 text-teal-600">Code tools I use</h4>
+              <p className="text-gray-800 py-1">HTML</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">Tailwind CSS</p>
+              <p className="text-gray-800 py-1">Git</p>
+              <p className="text-gray-800 py-1">Github</p>
+              <p className="text-gray-800 py-1">React.js</p>
+              <p className="text-gray-800 py-1">Vue.js</p>
+              <p className="text-gray-800 py-1">Chrome Dev Tools</p>
+            </div>
+          </div>
+
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
+            <div>
+              <Image src={writing} width={100} height={100} alt=" " />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Clear, Concise, Engaging, and Original Technical Articles
+              </h3>
+              <p className="py-2">
+                Taking complex technical subjects and breaking them down for
+                readers to understamd, even without prior knowledge of the
+                topic.
+              </p>
+              <h4 className="py-4 text-teal-600">Writing tools I use</h4>
+              <p className="text-gray-800 py-1">Google Docs</p>
+              <p className="text-gray-800 py-1">Grammarly</p>
+              <p className="text-gray-800 py-1">Copyscape</p>
+              <p className="text-gray-800 py-1">Small SEO Tools</p>
+              <p className="text-gray-800 py-1">WordPress</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p>
+            Here you will find some of the personal projects that
+             I created, with each project containing its own case study.
+            </p>
           </div>
         </section>
       </main>
